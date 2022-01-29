@@ -1,0 +1,146 @@
+#root {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.shop {
+  display: inline-flex;
+}
+
+.zone {
+  height: 100vh;
+  width: 100vw;
+}
+
+.checkout-zone {
+  width: 30vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform-style: preserve-3d;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.checkout-zone h1 {
+  text-align: center;
+}
+
+.dropzone {
+  background-color: color(srgb 0.749 0.894 1 / 0.401);
+  border: solid 4px black;
+  border-radius: 4px;
+  width: 25vw;
+  height: 100%;
+  margin-inline: 2.5vw;
+  position: relative;
+  top: 0;
+  right: 0;
+  transform: translateZ(-10px);
+  transition: background-color 300ms ease-in-out;
+}
+
+.drop-active {
+  //box-shadow: #81f56e 0px 30px 60px -12px inset, #81f56e 0px 18px 36px -18px inset;
+  box-shadow: 0px 0px 5px 5px #81f56e inset, 0px 0px 5px 5px #81f56e;
+  transition: 400ms ease-in-out;
+}
+
+.drop-target {
+  background-color: #81f56e;
+}
+
+.drag-drop {
+  display: inline-block;
+  width: 10vw;
+  height: auto;
+  position: relative;
+  z-index: 10;
+  touch-action: none;
+  transform: translate(0px, 0px);
+  text-align: center;
+  user-select: none;
+}
+
+.price {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  display: block;
+  color: white;
+}
+
+.blur {
+  filter: blur(10px);
+  transition: ease-in-out 150ms;
+}
+
+.hide {
+  transition: ease-in-out 150ms;
+  display: none;
+}
+
+.drag-drop img {
+  width: 10vw;
+  height: auto;
+}
+
+.enlarge img {
+  scale: 1.5;
+}
+
+.enlarge2 img {
+  scale: 2;
+}
+
+button {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-inline: auto;
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+  padding-inline: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #74df63;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #4caf50;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+button:hover {
+  background-color: #75dc64;
+  transition: ease-in-out 150ms;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+button:active {
+  transition: ease-in-out 150ms;
+  background-color: #59c547;
+  box-shadow: 0 5px #489f3b;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  transform: translateY(4px);
+}
