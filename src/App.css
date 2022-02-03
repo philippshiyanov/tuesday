@@ -10,7 +10,11 @@
 
 .zone {
   height: 100vh;
-  width: 100vw;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  place-items: center;
+  gap: 4ch;
 }
 
 .checkout-zone {

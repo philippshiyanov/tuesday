@@ -132,36 +132,35 @@ function App() {
       <div className="zone">
         <div id="1" className="drag-drop draggable" tabIndex="0">
           <img src={require("./img/the.png")} alt="" />
-          <div></div>
           <h1 className="price hide">$3</h1>
         </div>
 
-        <div id="1" className="drag-drop draggable" tabIndex="0">
+        <div id="2" className="drag-drop draggable" tabIndex="0">
           <img src={require("./img/2002.png")} alt="" />
           <h1 className="price hide">$2</h1>
         </div>
 
-        <div id="1" className="drag-drop draggable" tabIndex="0">
+        <div id="3" className="drag-drop draggable" tabIndex="0">
           <img src={require("./img/dance.png")} alt="" />
           <h1 className="price hide">$4</h1>
         </div>
 
-        <div id="1" className="drag-drop draggable" tabIndex="0">
+        <div id="4" className="drag-drop draggable" tabIndex="0">
           <img src={require("./img/easter.png")} alt="" />
           <h1 className="price hide">$5</h1>
         </div>
 
-        <div id="1" className="drag-drop draggable" tabIndex="0">
+        <div id="5" className="drag-drop draggable" tabIndex="0">
           <img src={require("./img/me.png")} alt="" />
           <h1 className="price hide">$5</h1>
         </div>
 
-        <div id="1" className="drag-drop draggable" tabIndex="0">
+        <div id="6" className="drag-drop draggable" tabIndex="0">
           <img src={require("./img/soul.png")} alt="" />
           <h1 className="price hide">$3</h1>
         </div>
 
-        <div id="1" className="drag-drop draggable" tabIndex="0">
+        <div id="7" className="drag-drop draggable" tabIndex="0">
           <img src={require("./img/3.png")} alt="" />
           <h1 className="price hide">$3</h1>
         </div>
